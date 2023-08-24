@@ -1,0 +1,21 @@
+A. What is reverse-i-search in a Linux terminal?
+
+--> Reverse-i-search helps us search a command that was executed earlier based on a part of some characters or strings.
+    
+    
+ B. How do you list out the hidden directories using Linux command line tool?
+ 
+ --> ls -a   			#It will give all hidden files and directories list
+ --> ls -ad .*/ | grep '/'      #It will give only hidden directores list
+ 
+ 
+ C. How comfortable are you with using Linux-based OS like Ubuntu, Centos, etc?
+ 
+ --> I have been using Linux based distors from last 2 years so I can say I'm quite comfortable with linux environment and commands. I have used kali linux in past currently using Ubuntu 20.04.
+ 
+ 
+ D. Have you ever used Servers to host any web applications in the past? If yes, what
+services did you set up (Like- Apache/Nginx/FTP/SMTP, etc)?
+
+--> While working on my personal projects I often deploy my web applications locally to see everything is as it is supposed to. I have used Apache server to deploy many projects locally. 
+
