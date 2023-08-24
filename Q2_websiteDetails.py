@@ -6,7 +6,7 @@ def social_links(html_content, base_url):
     soup = BeautifulSoup(html_content, 'html.parser')
     social_links = []
 
-    # Regular expressions for common social media domains
+    
     social_media_patterns = {
         "facebook": r".*facebook\.com.*",
         "linkedin": r".*linkedin\.com.*",
@@ -14,14 +14,12 @@ def social_links(html_content, base_url):
         "instagram": r".*instagram\.com.*"
     }
 
-    # Find links with social media patterns
     for a_tag in soup.find_all('a', href=True):
         for platform, pattern in social_media_patterns.items():
             if re.match(pattern, a_tag['href'], re.IGNORECASE):
                 social_links.append(a_tag['href'])
                 break
 
-    # Make relative URLs absolute
     social_links = [link if link.startswith("http") else f"{base_url}{link}" for link in social_links]
     return social_links
 
